@@ -1,9 +1,14 @@
+//Components
+import Main from "./components/Main";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>TEST</h1>
+      <Main>
+        <h1>TEST</h1>
+      </Main>
     </div>
   );
 }
