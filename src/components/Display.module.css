@@ -1,0 +1,15 @@
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: darkblue;
+  border-radius: 10px;
+  padding: 4rem 3.2rem 3.6rem;
+  margin-top: 3.2rem;
+}
+
+.display-output {
+  font-size: 5.6rem;
+  letter-spacing: -0.93px;
+  color: white;
+}

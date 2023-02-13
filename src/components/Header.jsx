@@ -4,7 +4,7 @@ import classes from "./Header.module.css";
 
 const Header = () => {
   return (
-    <div className={classes["header-wrapper"]}>
+    <header className={classes["header-wrapper"]}>
       <h1 className={classes.logo}>calc</h1>
       <div>
         <div className={classes["theme-wrapper"]}>
@@ -19,7 +19,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

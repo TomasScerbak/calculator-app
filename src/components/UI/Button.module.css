@@ -1,0 +1,23 @@
+.btn {
+  width: 6rem;
+  height: 6.4rem;
+  background: #eae3dc;
+  box-shadow: inset 0px -4px 0px #b3a497;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.span-two {
+  width: auto;
+  grid-column: span 2;
+}
+
+.btn--text {
+  font-size: 2rem;
+  letter-spacing: -0.33px;
+  text-transform: uppercase;
+}

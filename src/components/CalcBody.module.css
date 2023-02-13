@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  gap: 1.3rem;
+  padding: 2.4rem;
+  background-color: darkblue;
+  border-radius: 10px;
+  margin-top: 2.4rem;
+}
+
+.grid--4x5 {
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}

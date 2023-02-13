@@ -2,6 +2,8 @@
 import Main from "./components/Main";
 import Calculator from "./components/Calculator";
 import Header from "./components/Header";
+import Display from "./components/Display";
+import CalcBody from "./components/CalcBody";
 
 import "./App.css";
 
@@ -11,6 +13,8 @@ function App() {
       <Main>
         <Calculator>
           <Header />
+          <Display />
+          <CalcBody />
         </Calculator>
       </Main>
     </div>
