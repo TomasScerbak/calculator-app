@@ -19,6 +19,8 @@ body {
   margin: 0;
   height: 100vh;
   font-family: var(--ff-spartan);
+  font-weight: 700;
+  font-size: 3.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
