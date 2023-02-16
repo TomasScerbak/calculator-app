@@ -1,4 +1,4 @@
-import React, { useRef, useContext, useEffect } from "react";
+import React, { useRef, useContext } from "react";
 
 import ThemeContext from "../store/theme-context";
 
@@ -8,13 +8,8 @@ const Header = () => {
   const context = useContext(ThemeContext);
   const inputRef = useRef(1);
 
-  useEffect(() => {
-    context.inputRef = inputRef;
-  }, [context, inputRef]);
-
   const inputChangeHandler = (e) => {
-    inputRef.current = e.target.value;
-    console.log(inputRef.current);
+    context.inputRef = e.target.value;
   };
   return (
     <header className={classes["header-wrapper"]}>
