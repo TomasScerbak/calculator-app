@@ -1,11 +1,13 @@
-import React from "react";
-
 import classes from "./Display.module.css";
 
-const Display = () => {
+const Display = ({ currentOperand, previousOperand, operation }) => {
   return (
     <div className={classes.display}>
-      <div className={classes["display-output"]}>385,365</div>
+      <div className={classes["in-memory"]}>
+        {previousOperand}
+        {operation}
+      </div>
+      <div className={classes["display-output"]}>{currentOperand}</div>
     </div>
   );
 };

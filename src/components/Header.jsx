@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import classes from "./Header.module.css";
 
 const Header = () => {
+  const input = useRef(1);
+
+  const inputChangeHandler = (e) => {
+    console.log(e.target.value);
+  };
   return (
     <header className={classes["header-wrapper"]}>
       <h1 className={classes.logo}>calc</h1>
@@ -15,7 +20,15 @@ const Header = () => {
               <span>2</span>
               <span>3</span>
             </label>
-            <input id="input" type="range" min="0" max="2" defaultValue="1" />
+            <input
+              onChange={inputChangeHandler}
+              ref={input}
+              id="input"
+              type="range"
+              min="0"
+              max="2"
+              defaultValue="1"
+            />
           </div>
         </div>
       </div>

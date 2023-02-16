@@ -90,11 +90,3 @@ input[type="range"]::-ms-track {
   border: none;
   background: transparent;
 }
-
-/* Media queries */
-@media screen and (min-width: 480px) {
-  .header-wrapper {
-    width: 32rem;
-    height: 4.2rem;
-  }
-}

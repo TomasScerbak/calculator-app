@@ -1,3 +1,9 @@
 .calculator {
   margin: 3rem 2.4rem;
 }
+
+@media screen and (min-width: 490px) {
+  .calculator {
+    width: 53.3rem;
+  }
+}

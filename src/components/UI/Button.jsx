@@ -1,9 +1,13 @@
-import React from "react";
+import { ACTIONS } from "../../App";
 
-const Button = (props) => {
+const Button = ({ className, type, digit, dispatch }) => {
   return (
-    <button type={props.type} className={props.className}>
-      {props.children}
+    <button
+      onClick={() => dispatch({ type: ACTIONS.ADD_DIGIT, payload: digit })}
+      type={type}
+      className={className}
+    >
+      {digit}
     </button>
   );
 };
