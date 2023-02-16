@@ -1,12 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext, useEffect } from "react";
+
+import ThemeContext from "../store/theme-context";
 
 import classes from "./Header.module.css";
 
 const Header = () => {
-  const input = useRef(1);
+  const context = useContext(ThemeContext);
+  const inputRef = useRef(1);
+
+  useEffect(() => {
+    context.inputRef = inputRef;
+  }, [context, inputRef]);
 
   const inputChangeHandler = (e) => {
-    console.log(e.target.value);
+    inputRef.current = e.target.value;
+    console.log(inputRef.current);
   };
   return (
     <header className={classes["header-wrapper"]}>
@@ -22,7 +30,7 @@ const Header = () => {
             </label>
             <input
               onChange={inputChangeHandler}
-              ref={input}
+              ref={inputRef}
               id="input"
               type="range"
               min="0"
