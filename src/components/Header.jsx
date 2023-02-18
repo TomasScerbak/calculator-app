@@ -1,16 +1,13 @@
-import React, { useRef, useContext } from "react";
-
-import ThemeContext from "../store/theme-context";
+import React, { useRef } from "react";
 
 import classes from "./Header.module.css";
 
 const Header = () => {
-  const { input } = useContext(ThemeContext);
   const inputRef = useRef(1);
 
   const inputChangeHandler = (e) => {
     inputRef.current = e.target.value;
-    input = inputRef.current;
+    console.log(inputRef.current);
   };
   return (
     <header className={classes["header-wrapper"]}>
