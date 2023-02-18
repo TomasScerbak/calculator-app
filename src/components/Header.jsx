@@ -5,11 +5,12 @@ import ThemeContext from "../store/theme-context";
 import classes from "./Header.module.css";
 
 const Header = () => {
-  const context = useContext(ThemeContext);
+  const { input } = useContext(ThemeContext);
   const inputRef = useRef(1);
 
   const inputChangeHandler = (e) => {
-    context.inputRef = e.target.value;
+    inputRef.current = e.target.value;
+    input = inputRef.current;
   };
   return (
     <header className={classes["header-wrapper"]}>

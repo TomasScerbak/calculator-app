@@ -8,6 +8,8 @@ import Keyboard from "./components/Keyboard";
 
 import "./App.css";
 
+import { ThemeProvider } from "./store/theme-context";
+
 export const ACTIONS = {
   ADD_DIGIT: "add-digit",
   CHOOSE_OPERATION: "choose-operation",
@@ -36,17 +38,19 @@ function App() {
 
   return (
     <div className="App">
-      <Main>
-        <Calculator>
-          <Header />
-          <Display
-            currentOperand={currentOperand}
-            previousOperand={previousOperand}
-            operation={operation}
-          />
-          <Keyboard dispatch={dispatch} />
-        </Calculator>
-      </Main>
+      <ThemeProvider>
+        <Main>
+          <Calculator>
+            <Header />
+            <Display
+              currentOperand={currentOperand}
+              previousOperand={previousOperand}
+              operation={operation}
+            />
+            <Keyboard dispatch={dispatch} />
+          </Calculator>
+        </Main>
+      </ThemeProvider>
     </div>
   );
 }
