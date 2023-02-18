@@ -3,7 +3,7 @@ import { ACTIONS } from "../../App";
 const Button = ({ className, type, digit, dispatch }) => {
   return (
     <button
-      onClick={() => dispatch({ type: ACTIONS.ADD_DIGIT, payload: digit })}
+      onClick={() => dispatch({ type: ACTIONS.ADD_DIGIT, payload: { digit } })}
       type={type}
       className={className}
     >
