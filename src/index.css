@@ -12,6 +12,84 @@ html {
 }
 
 :root {
+  /* Colors */
+
+  /* Theme 1 */
+
+  /* Backgrounds */
+  -main-background-two: hsl(222, 26%, 31%);
+  -toggle-background-one: hsl(223, 31%, 20%);
+  -keypad-background-one: hsl(223, 31%, 20%);
+  -screen-background-one: hsl(224, 36%, 15%);
+
+  /* Keys */
+
+  -reset-del-button-background-one: hsl(225, 21%, 49%);
+  -reset-del-button-shadow-one: hsl(224, 28%, 35%);
+
+  -evaluate-button-one: hsl(6, 63%, 50%);
+  -toggle-thump-one: hsl(6, 63%, 50%);
+  -evaluate-shadow-one: hsl(6, 70%, 34%);
+
+  -digit-key-background-one: hsl(30, 25%, 89%);
+  -digit-key-shadow-one: hsl(28, 16%, 65%);
+
+  /* Text */
+
+  -key-text-one: hsl(221, 14%, 31%);
+  -evaluate-reset-del-text-one: hsl(0, 0%, 100%);
+
+  /* Theme 2 */
+
+  /* Backgrounds */
+  -main-background-two: hsl(0, 0%, 90%);
+  -toggle-background-two: hsl(0, 5%, 81%);
+  -keypad-background-two: hsl(0, 5%, 81%);
+  -screen-background-two: hsl(0, 0%, 93%);
+
+  /* Keys */
+
+  -reset-del-button-background-two: hsl(185, 42%, 37%);
+  -reset-del-button-shadow-two: hsl(185, 58%, 25%);
+
+  -evaluate-button-two: hsl(25, 98%, 40%);
+  -toggle-button-two: hsl(25, 98%, 40%);
+  -evaluate-shadow-two: hsl(25, 99%, 27%);
+
+  -digit-key-background-two: hsl(45, 7%, 89%);
+  -digit-key-shadow-two: hsl(35, 11%, 61%);
+
+  /* Text */
+
+  -key-text-two: hsl(60, 10%, 19%);
+  -evaluate-reset-del-text-two: hsl(0, 0%, 100%);
+
+  /* Theme 3 */
+
+  /* Backgrounds */
+  -main-background-three: hsl(268, 75%, 9%);
+  -toggle-background-three: hsl(268, 71%, 12%);
+  -keypad-background-three: hsl(268, 71%, 12%);
+  -screen-background-three: hsl(268, 71%, 12%);
+
+  /* Keys */
+
+  -reset-del-button-background-three: hsl(281, 89%, 26%);
+  -reset-del-button-shadow-three: hsl(285, 91%, 52%);
+
+  -evaluate-button-three: hsl(176, 100%, 44%);
+  -toggle-button-three: hsl(176, 100%, 44%);
+  -evaluate-shadow-three: hsl(177, 92%, 70%);
+
+  -digit-key-background-three: hsl(268, 47%, 21%);
+  -digit-key-shadow-three: hsl(290, 70%, 36%);
+
+  /* Text */
+
+  -key-text-three: hsl(52, 100%, 62%);
+  -evaluate-text-three: hsl(198, 20%, 13%);
+  -reset-del-text-three: hsl(0, 0%, 100%);
+
   --ff-spartan: "League Spartan", sans-serif;
 }
 
