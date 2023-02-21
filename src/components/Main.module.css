@@ -3,18 +3,6 @@ main {
   height: 100vh;
 }
 
-.background-main-one {
-  background-color: #3a4663;
-}
-
-.background-main-two {
-  background-color: #e6e6e6;
-}
-
-.background-main-three {
-  background-color: #17062a;
-}
-
 @media screen and (min-width: 480px) {
   main {
     display: flex;
