@@ -11,6 +11,7 @@ const Header = () => {
     context.inputValue = e.target.value;
     console.log(context.inputValue);
   };
+
   return (
     <header className={classes["header-wrapper"]}>
       <h1 className={classes.logo}>calc</h1>

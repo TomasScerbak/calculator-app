@@ -125,7 +125,7 @@ function App() {
 
   return (
     <div className="App">
-      <InputContext.Provider value={{ inputValue: 1 }}>
+      <InputContext.Provider value={{}}>
         <Main>
           <Calculator>
             <Header />
