@@ -3,7 +3,7 @@
   min-width: 32.7rem;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 481px) {
   .calculator {
     min-width: 53.3rem;
   }
