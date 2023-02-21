@@ -6,6 +6,9 @@ import Header from "./components/Header";
 import Display from "./components/Display";
 import Keyboard from "./components/Keyboard";
 
+//Context
+import InputContext from "./store/input-context";
+
 import "./App.css";
 
 export const ACTIONS = {
@@ -122,17 +125,19 @@ function App() {
 
   return (
     <div className="App">
-      <Main>
-        <Calculator>
-          <Header />
-          <Display
-            currentOperand={currentOperand}
-            previousOperand={previousOperand}
-            operation={operation}
-          />
-          <Keyboard dispatch={dispatch} />
-        </Calculator>
-      </Main>
+      <InputContext.Provider value={{ inputValue: 1 }}>
+        <Main>
+          <Calculator>
+            <Header />
+            <Display
+              currentOperand={currentOperand}
+              previousOperand={previousOperand}
+              operation={operation}
+            />
+            <Keyboard dispatch={dispatch} />
+          </Calculator>
+        </Main>
+      </InputContext.Provider>
     </div>
   );
 }
