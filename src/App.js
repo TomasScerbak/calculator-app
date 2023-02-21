@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useReducer, useState } from "react";
 //Components
 import Main from "./components/Main";
 import Calculator from "./components/Calculator";
@@ -122,10 +122,11 @@ function App() {
     reducer,
     {}
   );
+  const [inputValue, setInputValue] = useState(1);
 
   return (
     <div className="App">
-      <InputContext.Provider value={{}}>
+      <InputContext.Provider value={{ inputValue, setInputValue }}>
         <Main>
           <Calculator>
             <Header />

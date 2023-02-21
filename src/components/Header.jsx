@@ -5,16 +5,28 @@ import InputContext from "../store/input-context";
 import classes from "./Header.module.css";
 
 const Header = () => {
-  const context = useContext(InputContext);
+  const { inputValue, setInputValue } = useContext(InputContext);
 
   const inputChangeHandler = (e) => {
-    context.inputValue = e.target.value;
-    console.log(context.inputValue);
+    setInputValue(e.target.value);
+    console.log(inputValue);
   };
 
   return (
     <header className={classes["header-wrapper"]}>
-      <h1 className={classes.logo}>calc</h1>
+      <h1
+        className={`${classes.logo} ${
+          inputValue === "0"
+            ? classes["digit-key-background-one"]
+            : inputValue === "1"
+            ? classes["digit-key-background-two"]
+            : inputValue === "2"
+            ? classes["digit-key-background-three"]
+            : ""
+        }`}
+      >
+        calc
+      </h1>
       <div>
         <div className={classes["theme-wrapper"]}>
           <h2 className={classes.theme}>THEME</h2>
