@@ -1,5 +1,5 @@
 .btn {
-  width: auto;
+  min-width: 6rem;
   height: 6.4rem;
   background: #eae3dc;
   box-shadow: inset 0px -4px 0px #b3a497;
@@ -22,9 +22,9 @@
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 769px) {
   .btn {
-    width: 10.1rem;
+    min-width: 10.1rem;
     height: 6.4rem;
   }
 
