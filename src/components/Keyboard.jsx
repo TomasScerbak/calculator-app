@@ -4,31 +4,35 @@ import OperationButton from "./UI/OperationButton";
 import classes from "./Keyboard.module.css";
 import styles from "./UI/DigitButton.module.css";
 
-import { ACTIONS } from "../App";
+import { ACTIONS } from "../store/reducer";
 
 const Keyboard = ({ dispatch }) => {
+  const buttonsUpper = ["7", "8", "9"].map((digit) => (
+    <DigitButton dispatch={dispatch} digit={digit} className={styles.btn} />
+  ));
+  const buttonsMiddle = ["4", "5", "6"].map((digit) => (
+    <DigitButton dispatch={dispatch} digit={digit} className={styles.btn} />
+  ));
+  const buttonsBelow = ["1", "2", "3"].map((digit) => (
+    <DigitButton dispatch={dispatch} digit={digit} className={styles.btn} />
+  ));
+
   return (
     <div className={`${classes.grid} ${classes["grid--4x5"]}`}>
-      <DigitButton dispatch={dispatch} digit="7" className={styles.btn} />
-      <DigitButton dispatch={dispatch} digit="8" className={styles.btn} />
-      <DigitButton dispatch={dispatch} digit="9" className={styles.btn} />
+      {buttonsUpper}
       <button
         onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}
         className={`${styles.btn} ${styles["btn--text"]}`}
       >
         DEL
       </button>
-      <DigitButton dispatch={dispatch} digit="4" className={styles.btn} />
-      <DigitButton dispatch={dispatch} digit="5" className={styles.btn} />
-      <DigitButton dispatch={dispatch} digit="6" className={styles.btn} />
+      {buttonsMiddle}
       <OperationButton
         dispatch={dispatch}
         operation="+"
         className={styles.btn}
       />
-      <DigitButton dispatch={dispatch} digit="1" className={styles.btn} />
-      <DigitButton dispatch={dispatch} digit="2" className={styles.btn} />
-      <DigitButton dispatch={dispatch} digit="3" className={styles.btn} />
+      {buttonsBelow}
       <OperationButton
         dispatch={dispatch}
         operation="-"

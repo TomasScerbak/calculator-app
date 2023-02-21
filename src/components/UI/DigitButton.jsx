@@ -1,4 +1,4 @@
-import { ACTIONS } from "../../App";
+import { ACTIONS } from "../../store/reducer";
 
 const Button = ({ className, type, digit, dispatch }) => {
   return (
