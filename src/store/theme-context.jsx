@@ -7,7 +7,6 @@ export function ThemeProvider({ children }) {
 
   const setThemeHandler = (event) => {
     setTheme(event.target.value);
-    console.log((theme = event.target.value));
   };
 
   const setThemeStyles = (args) => {
