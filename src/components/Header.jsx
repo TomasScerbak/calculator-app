@@ -9,7 +9,6 @@ const Header = () => {
 
   const inputChangeHandler = (e) => {
     setInputValue(e.target.value);
-    console.log(inputValue);
   };
 
   return (
