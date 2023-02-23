@@ -1,22 +1,14 @@
 import React, { useContext } from "react";
 
-import InputContext from "../store/input-context";
+import ThemeContext from "../store/theme-context";
 
 import classes from "./Main.module.css";
 
 const Main = (props) => {
-  const { inputValue } = useContext(InputContext);
+  const { setThemeStyles } = useContext(ThemeContext);
   return (
     <main
-      className={`${classes.main} ${
-        inputValue === "0"
-          ? classes["main-background-one"]
-          : inputValue === "1"
-          ? classes["main-background-two"]
-          : inputValue === "2"
-          ? classes["main-background-three"]
-          : ""
-      }`}
+      className={`${classes.main} ${classes[setThemeStyles("backgroundMain")]}`}
     >
       <section>{props.children}</section>
     </main>
