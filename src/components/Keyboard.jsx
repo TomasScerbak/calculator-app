@@ -8,13 +8,28 @@ import { ACTIONS } from "../store/reducer";
 
 const Keyboard = ({ dispatch }) => {
   const buttonsUpper = ["7", "8", "9"].map((digit) => (
-    <DigitButton dispatch={dispatch} digit={digit} className={styles.btn} />
+    <DigitButton
+      key={digit}
+      dispatch={dispatch}
+      digit={digit}
+      className={styles.btn}
+    />
   ));
   const buttonsMiddle = ["4", "5", "6"].map((digit) => (
-    <DigitButton dispatch={dispatch} digit={digit} className={styles.btn} />
+    <DigitButton
+      key={digit}
+      dispatch={dispatch}
+      digit={digit}
+      className={styles.btn}
+    />
   ));
   const buttonsBelow = ["1", "2", "3"].map((digit) => (
-    <DigitButton dispatch={dispatch} digit={digit} className={styles.btn} />
+    <DigitButton
+      key={digit}
+      dispatch={dispatch}
+      digit={digit}
+      className={styles.btn}
+    />
   ));
 
   return (
