@@ -18,7 +18,6 @@ html {
 
   /* Backgrounds */
   --main-background-one: hsl(222, 26%, 31%);
-  --toggle-background-one: hsl(223, 31%, 20%);
   --keypad-background-one: hsl(223, 31%, 20%);
   --screen-background-one: hsl(224, 36%, 15%);
 
@@ -28,7 +27,6 @@ html {
   --reset-del-button-shadow-one: hsl(224, 28%, 35%);
 
   --evaluate-button-one: hsl(6, 63%, 50%);
-  --toggle-thump-one: hsl(6, 63%, 50%);
   --evaluate-shadow-one: hsl(6, 70%, 34%);
 
   --digit-key-background-one: hsl(30, 25%, 89%);
@@ -43,7 +41,6 @@ html {
 
   /* Backgrounds */
   --main-background-two: hsl(0, 0%, 90%);
-  --toggle-background-two: hsl(0, 5%, 81%);
   --keypad-background-two: hsl(0, 5%, 81%);
   --screen-background-two: hsl(0, 0%, 93%);
 
@@ -53,7 +50,6 @@ html {
   --reset-del-button-shadow-two: hsl(185, 58%, 25%);
 
   --evaluate-button-two: hsl(25, 98%, 40%);
-  --toggle-button-two: hsl(25, 98%, 40%);
   --evaluate-shadow-two: hsl(25, 99%, 27%);
 
   --digit-key-background-two: hsl(45, 7%, 89%);
@@ -68,7 +64,6 @@ html {
 
   /* Backgrounds */
   --main-background-three: hsl(268, 75%, 9%);
-  --toggle-background-three: hsl(268, 71%, 12%);
   --keypad-background-three: hsl(268, 71%, 12%);
   --screen-background-three: hsl(268, 71%, 12%);
 
@@ -78,7 +73,6 @@ html {
   --reset-del-button-shadow-three: hsl(285, 91%, 52%);
 
   --evaluate-button-three: hsl(176, 100%, 44%);
-  --toggle-button-three: hsl(176, 100%, 44%);
   --evaluate-shadow-three: hsl(177, 92%, 70%);
 
   --digit-key-background-three: hsl(268, 47%, 21%);
@@ -87,6 +81,7 @@ html {
   /* Text */
 
   --key-text-three: hsl(52, 100%, 62%);
+  --evaluate-reset-del-text-three: hsl(0, 0%, 100%);
   --evaluate-text-three: hsl(198, 20%, 13%);
   --reset-del-text-three: hsl(0, 0%, 100%);
 
@@ -101,4 +96,112 @@ body {
   font-size: 3.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Background Themes */
+.main-background-one {
+  background-color: var(--main-background-one);
+}
+
+.main-background-two {
+  background-color: var(--main-background-two);
+}
+
+.main-background-three {
+  background-color: var(--main-background-three);
+}
+
+/* Header Text Themes */
+.header-text-one {
+  color: var(--evaluate-reset-del-text-one);
+}
+.header-text-two {
+  color: var(--evaluate-reset-del-text-two);
+}
+.header-text-three {
+  color: var(--evaluate-reset-del-text-three);
+}
+
+/* Display Themes */
+
+.display-color-one {
+  background-color: var(--screen-background-one);
+}
+.display-color-two {
+  background-color: var(--screen-background-two);
+}
+.display-color-three {
+  background-color: var(--screen-background-three);
+}
+.display-numbers-one {
+  color: var(--evaluate-reset-del-text-one);
+}
+.display-numbers-two {
+  color: var(--evaluate-reset-del-text-two);
+}
+.display-numbers-three {
+  color: var(--evaluate-reset-del-text-three);
+}
+
+/* Keyboard Themes */
+.background-keyboard-one {
+  background-color: var(--keypad-background-one);
+}
+.background-keyboard-two {
+  background-color: var(--keypad-background-two);
+}
+.background-keyboard-three {
+  background-color: var(--keypad-background-three);
+}
+
+/* Digit Buttons Themes */
+
+.digit-theme-one {
+  color: var(--key-text-one);
+  background-color: var(--digit-key-background-one);
+  box-shadow: inset 0px -4px 0px #b3a497;
+}
+.digit-theme-two {
+  color: var(--key-text-two);
+  background-color: var(--digit-key-background-two);
+  box-shadow: inset 0px -4px 0px #a79e91;
+}
+.digit-theme-three {
+  color: var(--key-text-three);
+  background-color: var(--digit-key-background-three);
+  box-shadow: inset 0px -4px 0px #881c9e;
+}
+
+/* Reset and DEL button Themes */
+.reset-del-one {
+  color: var(--evaluate-reset-del-text-one);
+  background-color: var(--reset-del-button-background-one);
+  box-shadow: inset 0px -4px 0px #414e73;
+}
+.reset-del-two {
+  color: var(--evaluate-reset-del-text-two);
+  background-color: var(--reset-del-button-background-two);
+  box-shadow: inset 0px -4px 0px #1b6066;
+}
+.reset-del-three {
+  color: var(--evaluate-reset-del-text-three);
+  background-color: var(--reset-del-button-background-three);
+  box-shadow: inset 0px -4px 0px #be15f4;
+}
+
+/* Evaluate Button Themes */
+.evaluate-button-one {
+  color: var(--evaluate-reset-del-text-one);
+  background-color: var(--evaluate-button-one);
+  box-shadow: inset 0px -4px 0px #93261a;
+}
+.evaluate-button-two {
+  color: var(--evaluate-reset-del-text-two);
+  background-color: var(--evaluate-button-two);
+  box-shadow: inset 0px -4px 0px #93261a;
+}
+.evaluate-button-three {
+  color: var(--evaluate-reset-del-text-three);
+  background-color: var(--evaluate-button-three);
+  box-shadow: inset 0px -4px 0px #6cf9f1;
 }

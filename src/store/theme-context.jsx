@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const ThemeContext = React.createContext();
 
 export function ThemeProvider({ children }) {
-  let [theme, setTheme] = useState(1);
+  let [theme, setTheme] = useState("0");
 
   const setThemeHandler = (event) => {
     setTheme(event.target.value);
@@ -14,34 +14,31 @@ export function ThemeProvider({ children }) {
       themeOne: {
         backgroundMain: "main-background-one",
         headerText: "header-text-one",
-        inputBackground: "input-background-one",
+        display: "display-color-one",
         displayNumbers: "display-numbers-one",
         backgroundKeyboard: "background-keyboard-one",
-        keyboardButtons: "keyboard-buttons-one",
-        keyboardOperators: "keyboard-operators-one",
-        keyboardResets: "keyboard-resets-one",
+        digit: "digit-theme-one",
+        resetAndDel: "reset-del-one",
         evaluateButton: "evaluate-button-one",
       },
       themeTwo: {
         backgroundMain: "main-background-two",
         headerText: "header-text-two",
-        inputBackground: "input-background-two",
+        display: "display-color-two",
         displayNumbers: "display-numbers-two",
         backgroundKeyboard: "background-keyboard-two",
-        keyboardButtons: "keyboard-buttons-two",
-        keyboardOperators: "keyboard-operators-two",
-        keyboardResets: "keyboard-resets-two",
+        digit: "digit-theme-two",
+        resetAndDel: "reset-del-two",
         evaluateButton: "evaluate-button-two",
       },
       themeThree: {
         backgroundMain: "main-background-three",
         headerText: "header-text-three",
-        inputBackground: "input-background-three",
+        display: "display-color-three",
         displayNumbers: "display-numbers-three",
         backgroundKeyboard: "background-keyboard-three",
-        keyboardButtons: "keyboard-buttons-three",
-        keyboardOperators: "keyboard-operators-three",
-        keyboardResets: "keyboard-resets-three",
+        digit: "digit-theme-three",
+        resetAndDel: "reset-del-three",
         evaluateButton: "evaluate-button-three",
       },
     };

@@ -7,9 +7,7 @@ import classes from "./Main.module.css";
 const Main = (props) => {
   const { setThemeStyles } = useContext(ThemeContext);
   return (
-    <main
-      className={`${classes.main} ${classes[setThemeStyles("backgroundMain")]}`}
-    >
+    <main className={`${classes.main} ${[setThemeStyles("backgroundMain")]}`}>
       <section>{props.children}</section>
     </main>
   );
