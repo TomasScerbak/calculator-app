@@ -113,13 +113,13 @@ body {
 
 /* Header Text Themes */
 .header-text-one {
-  color: var(--evaluate-reset-del-text-one);
+  color: #ffffff;
 }
 .header-text-two {
-  color: var(--evaluate-reset-del-text-two);
+  color: #36362c;
 }
 .header-text-three {
-  color: var(--evaluate-reset-del-text-three);
+  color: #ffe53d;
 }
 
 /* Display Themes */
@@ -134,13 +134,13 @@ body {
   background-color: var(--screen-background-three);
 }
 .display-numbers-one {
-  color: var(--evaluate-reset-del-text-one);
+  color: #ffffff;
 }
 .display-numbers-two {
-  color: var(--evaluate-reset-del-text-two);
+  color: #36362c;
 }
 .display-numbers-three {
-  color: var(--evaluate-reset-del-text-three);
+  color: #ffe53d;
 }
 
 /* Keyboard Themes */
@@ -201,7 +201,38 @@ body {
   box-shadow: inset 0px -4px 0px #93261a;
 }
 .evaluate-button-three {
-  color: var(--evaluate-reset-del-text-three);
+  color: #1a2327;
   background-color: var(--evaluate-button-three);
   box-shadow: inset 0px -4px 0px #6cf9f1;
+}
+
+/* Active Buttons Styles */
+.active-digit-one:active {
+  background-color: #fffffe;
+}
+.active-digit-two:active {
+  background-color: #ffffff;
+}
+.active-digit-three:active {
+  background-color: #8631af;
+}
+
+.active-reset-del-one:active {
+  background-color: #a2b2e1;
+}
+.active-reset-del-two:active {
+  background-color: #62b5bc;
+}
+.active-reset-del-three:active {
+  background-color: #8631af;
+}
+
+.evaluate-active-one:active {
+  background-color: #f96b5b;
+}
+.evaluate-active-two:active {
+  background-color: #ff8a38;
+}
+.evaluate-active-three:active {
+  background-color: #93fff8;
 }

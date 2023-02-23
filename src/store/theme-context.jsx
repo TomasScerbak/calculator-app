@@ -20,6 +20,9 @@ export function ThemeProvider({ children }) {
         digit: "digit-theme-one",
         resetAndDel: "reset-del-one",
         evaluateButton: "evaluate-button-one",
+        activeDigit: "active-digit-one",
+        resetDelActive: "active-reset-del-one",
+        evaluateActive: "evaluate-active-one",
       },
       themeTwo: {
         backgroundMain: "main-background-two",
@@ -30,6 +33,9 @@ export function ThemeProvider({ children }) {
         digit: "digit-theme-two",
         resetAndDel: "reset-del-two",
         evaluateButton: "evaluate-button-two",
+        activeDigit: "active-digit-two",
+        resetDelActive: "active-reset-del-two",
+        evaluateActive: "evaluate-active-two",
       },
       themeThree: {
         backgroundMain: "main-background-three",
@@ -40,6 +46,9 @@ export function ThemeProvider({ children }) {
         digit: "digit-theme-three",
         resetAndDel: "reset-del-three",
         evaluateButton: "evaluate-button-three",
+        activeDigit: "active-digit-three",
+        resetDelActive: "active-reset-del-three",
+        evaluateActive: "evaluate-active-three",
       },
     };
     if (theme === "0") return styles.themeOne[args];

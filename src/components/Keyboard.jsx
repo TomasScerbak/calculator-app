@@ -18,7 +18,9 @@ const Keyboard = ({ dispatch }) => {
       key={digit}
       dispatch={dispatch}
       digit={digit}
-      className={`${styles.btn} ${setThemeStyles("digit")}`}
+      className={`${styles.btn} ${setThemeStyles("digit")} ${setThemeStyles(
+        "activeDigit"
+      )}`}
     />
   ));
   const buttonsMiddle = ["4", "5", "6"].map((digit) => (
@@ -26,7 +28,9 @@ const Keyboard = ({ dispatch }) => {
       key={digit}
       dispatch={dispatch}
       digit={digit}
-      className={`${styles.btn} ${setThemeStyles("digit")}`}
+      className={`${styles.btn} ${setThemeStyles("digit")} ${setThemeStyles(
+        "activeDigit"
+      )}`}
     />
   ));
   const buttonsBelow = ["1", "2", "3"].map((digit) => (
@@ -34,7 +38,9 @@ const Keyboard = ({ dispatch }) => {
       key={digit}
       dispatch={dispatch}
       digit={digit}
-      className={`${styles.btn} ${setThemeStyles("digit")}`}
+      className={`${styles.btn} ${setThemeStyles("digit")} ${setThemeStyles(
+        "activeDigit"
+      )}`}
     />
   ));
 
@@ -49,7 +55,7 @@ const Keyboard = ({ dispatch }) => {
         onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}
         className={`${styles.btn} ${styles["btn--text"]} ${setThemeStyles(
           "resetAndDel"
-        )}`}
+        )} ${setThemeStyles("resetDelActive")}`}
       >
         DEL
       </button>
@@ -57,39 +63,51 @@ const Keyboard = ({ dispatch }) => {
       <OperationButton
         dispatch={dispatch}
         operation="+"
-        className={`${styles.btn} ${setThemeStyles("digit")}`}
+        className={`${styles.btn} ${setThemeStyles("digit")} ${setThemeStyles(
+          "activeDigit"
+        )}`}
       />
       {buttonsBelow}
       <OperationButton
         dispatch={dispatch}
         operation="-"
-        className={`${styles.btn} ${setThemeStyles("digit")}`}
+        className={`${styles.btn} ${setThemeStyles("digit")} ${setThemeStyles(
+          "activeDigit"
+        )}`}
       />
       <DigitButton
         dispatch={dispatch}
         digit="."
-        className={`${styles.btn} ${setThemeStyles("digit")}`}
+        className={`${styles.btn} ${setThemeStyles("digit")} ${setThemeStyles(
+          "activeDigit"
+        )}`}
       />
       <DigitButton
         dispatch={dispatch}
         digit="0"
-        className={`${styles.btn} ${setThemeStyles("digit")}`}
+        className={`${styles.btn} ${setThemeStyles("digit")} ${setThemeStyles(
+          "activeDigit"
+        )}`}
       />
       <OperationButton
         dispatch={dispatch}
         operation="/"
-        className={`${styles.btn} ${setThemeStyles("digit")}`}
+        className={`${styles.btn} ${setThemeStyles("digit")} ${setThemeStyles(
+          "activeDigit"
+        )}`}
       />
       <OperationButton
         dispatch={dispatch}
         operation="*"
-        className={`${styles.btn} ${setThemeStyles("digit")}`}
+        className={`${styles.btn} ${setThemeStyles("digit")} ${setThemeStyles(
+          "activeDigit"
+        )}`}
       />
       <button
         onClick={() => dispatch({ type: ACTIONS.RESET })}
         className={`${styles.btn} ${styles["span-two"]} ${
           styles["btn--text"]
-        } ${setThemeStyles("resetAndDel")}`}
+        } ${setThemeStyles("resetAndDel")} ${setThemeStyles("resetDelActive")}`}
       >
         Reset
       </button>
@@ -97,7 +115,9 @@ const Keyboard = ({ dispatch }) => {
         onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
         className={`${styles.btn} ${styles["span-two"]} ${
           styles["btn--text"]
-        } ${setThemeStyles("evaluateButton")}`}
+        } ${setThemeStyles("evaluateButton")} ${setThemeStyles(
+          "evaluateActive"
+        )}`}
       >
         =
       </button>
