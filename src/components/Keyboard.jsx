@@ -98,7 +98,7 @@ const Keyboard = ({ dispatch }) => {
       />
       <OperationButton
         dispatch={dispatch}
-        operation="*"
+        operation="X"
         className={`${styles.btn} ${setThemeStyles("digit")} ${setThemeStyles(
           "activeDigit"
         )}`}
