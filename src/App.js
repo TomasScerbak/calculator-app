@@ -5,6 +5,7 @@ import Calculator from "./components/Calculator";
 import Header from "./components/Header";
 import Display from "./components/Display";
 import Keyboard from "./components/Keyboard";
+import Attribution from "./components/Attribution";
 
 import { ThemeProvider } from "./store/theme-context";
 
@@ -31,6 +32,7 @@ const App = () => {
             />
             <Keyboard dispatch={dispatch} />
           </Calculator>
+          <Attribution />
         </Main>
       </ThemeProvider>
     </div>
