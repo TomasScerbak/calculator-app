@@ -29,7 +29,10 @@ export const reducer = (state, { type, payload }) => {
       };
 
     case ACTIONS.CHOOSE_OPERATION:
-      if (state.currentOperand === null && state.previousOperand === null)
+      if (
+        state.currentOperand === undefined &&
+        state.previousOperand === undefined
+      )
         return state;
 
       if (state.currentOperand === null) {
