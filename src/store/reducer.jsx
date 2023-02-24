@@ -10,8 +10,9 @@ export const reducer = (state, { type, payload }) => {
   switch (type) {
     case ACTIONS.ADD_DIGIT:
       if (payload.digit === "0" && state.currentOperand === "0") return state;
-      if (payload.digit === "." && state.currentOperand.includes("."))
+      if (payload.digit === "." && state.currentOperand === undefined)
         return state;
+      if (state.currentOperand === ".") return state;
 
       return {
         ...state,
