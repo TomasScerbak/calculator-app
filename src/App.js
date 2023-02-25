@@ -19,6 +19,8 @@ const App = () => {
     {}
   );
 
+  console.log(currentOperand, previousOperand, operation);
+
   return (
     <div className="App">
       <ThemeProvider>

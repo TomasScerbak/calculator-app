@@ -20,7 +20,8 @@ export const reducer = (state, { type, payload }) => {
       };
 
     case ACTIONS.DELETE_DIGIT:
-      if (state.currentOperand === null) return state;
+      if (state.currentOperand === null || state.currentOperand === undefined)
+        return state;
       return {
         ...state,
         currentOperand: state.currentOperand.slice(
